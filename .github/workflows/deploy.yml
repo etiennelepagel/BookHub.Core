@@ -22,4 +22,4 @@ jobs:
         runtime: 'dotnet6'
         entry_point: 'BookHub.Core.Appointment.Function'
         region: 'northamerica-northeast1'
-        source_dir: 'BookHub.Core.Appointment'
+        source_dir: 'BookHub.Core/BookHub.Core.Appointment'
