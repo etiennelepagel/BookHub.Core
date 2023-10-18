@@ -12,8 +12,9 @@ public class BusinessRepository : IBusinessRepository
         var result = await Task.WhenAll(businesses.Select(async businessDocument =>
         {
             var businessSnapshot = await businessDocument.GetSnapshotAsync();
-            var business = businessSnapshot.ConvertTo<Business>();
-            return new Business(businessSnapshot.Id, business.Name);
+            var business = businessSnapshot.ConvertTo<Entities.Business>();
+            //var business = businessSnapshot.ToDictionary();
+            return new Business(business.Id, business.BusinessName);
         }));
 
         return result.ToList();
