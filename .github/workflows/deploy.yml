@@ -22,7 +22,8 @@ jobs:
         runtime: 'dotnet6'
         entry_point: 'BookHub.Core.Appointment.Function'
         region: 'northamerica-northeast1'
-        source_dir: 'BookHub.Core/BookHub.Core.Appointment'
+        source_dir: 'BookHub.Core'
+        env_vars: 'GOOGLE_BUILDABLE=BookHub.Core.Appointment'
     
     - id: 'deploy-list-business'
       uses: 'google-github-actions/deploy-cloud-functions@v1'
@@ -31,4 +32,5 @@ jobs:
         runtime: 'dotnet6'
         entry_point: 'BookHub.Core.Appointment.ListBusiness'
         region: 'northamerica-northeast1'
-        source_dir: 'BookHub.Core/BookHub.Core.Appointment'
+        source_dir: 'BookHub.Core'
+        env_vars: 'GOOGLE_BUILDABLE=BookHub.Core.Appointment'
