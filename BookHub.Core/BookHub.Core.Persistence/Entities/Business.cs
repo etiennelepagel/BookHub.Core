@@ -8,45 +8,45 @@ public class Business
     [FirestoreDocumentId]
     public string Id { get; set; }
     
-    [FirestoreProperty]
+    [FirestoreProperty("address")]
     public string Address { get; set; }
-    
-    [FirestoreProperty]
+
+    [FirestoreProperty("bannerImageLink")]
     public string BannerImageLink { get; set; }
-    
-    [FirestoreProperty]
+
+    [FirestoreProperty("businessId")]
     public string BusinessId { get; set; }
-    
-    [FirestoreProperty]
+
+    [FirestoreProperty("businessName")]
     public string BusinessName { get; set; }
-    
-    [FirestoreProperty]
+
+    [FirestoreProperty("category")]
     public string Category { get; set; }
-    
-    [FirestoreProperty]
+
+    [FirestoreProperty("cloaseTime")]
     public string CloseTime { get; set; }
-    
-    [FirestoreProperty]
+
+    [FirestoreProperty("description")]
     public string Description { get; set; }
-    
-    [FirestoreProperty]
+
+    [FirestoreProperty("facilities")]
     public string[] Facilities { get; set; }
-    
-    [FirestoreProperty]
+
+    [FirestoreProperty("fbLink")]
     public string FbLink { get; set; }
-    
-    [FirestoreProperty]
+
+    [FirestoreProperty("instaLink")]
     public string InstaLink { get; set; }
-    
-    [FirestoreProperty]
+
+    [FirestoreProperty("logoImageLink")]
     public string LogoImageLink { get; set; }
-    
-    [FirestoreProperty]
+
+    [FirestoreProperty("openTime")]
     public string OpenTime { get; set; }
-    
-    [FirestoreProperty]
+
+    [FirestoreProperty("phoneNo")]
     public string PhoneNo { get; set; }
-    
-    [FirestoreProperty]
+
+    [FirestoreProperty("xLink")]
     public string XLink { get; set; }
 }
