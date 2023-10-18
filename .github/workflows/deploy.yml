@@ -15,11 +15,20 @@ jobs:
       with:
         credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
 
-    - id: 'deploy'
+    - id: 'deploy-appointment'
       uses: 'google-github-actions/deploy-cloud-functions@v1'
       with:
         name: 'Appointment'
         runtime: 'dotnet6'
         entry_point: 'BookHub.Core.Appointment.Function'
+        region: 'northamerica-northeast1'
+        source_dir: 'BookHub.Core/BookHub.Core.Appointment'
+    
+    - id: 'deploy-list-business'
+      uses: 'google-github-actions/deploy-cloud-functions@v1'
+      with:
+        name: 'ListBusiness'
+        runtime: 'dotnet6'
+        entry_point: 'BookHub.Core.Business.ListBusiness'
         region: 'northamerica-northeast1'
         source_dir: 'BookHub.Core/BookHub.Core.Appointment'
