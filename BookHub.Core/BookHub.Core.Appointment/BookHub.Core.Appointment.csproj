@@ -10,4 +10,9 @@
         <PackageReference Include="Google.Cloud.Functions.Hosting" Version="2.1.0" />
         <None Include="appsettings*.json" CopyToOutputDirectory="PreserveNewest" />
     </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BookHub.Core.Application\BookHub.Core.Application.csproj" />
+      <ProjectReference Include="..\BookHub.Core.Persistence\BookHub.Core.Persistence.csproj" />
+    </ItemGroup>
 </Project>

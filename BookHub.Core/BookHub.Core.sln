@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookHub.Core.Appointment", "BookHub.Core.Appointment\BookHub.Core.Appointment.csproj", "{2A92AE13-FCDC-43BE-B9A4-3CCCBC0CA56C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookHub.Core.Persistence", "BookHub.Core.Persistence\BookHub.Core.Persistence.csproj", "{D94AF251-BD50-45EE-B946-0F146D202982}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookHub.Core.Application", "BookHub.Core.Application\BookHub.Core.Application.csproj", "{3CF7621E-0EFE-4228-86D6-19609BF917B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{2A92AE13-FCDC-43BE-B9A4-3CCCBC0CA56C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A92AE13-FCDC-43BE-B9A4-3CCCBC0CA56C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A92AE13-FCDC-43BE-B9A4-3CCCBC0CA56C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D94AF251-BD50-45EE-B946-0F146D202982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D94AF251-BD50-45EE-B946-0F146D202982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D94AF251-BD50-45EE-B946-0F146D202982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D94AF251-BD50-45EE-B946-0F146D202982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CF7621E-0EFE-4228-86D6-19609BF917B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF7621E-0EFE-4228-86D6-19609BF917B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CF7621E-0EFE-4228-86D6-19609BF917B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CF7621E-0EFE-4228-86D6-19609BF917B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

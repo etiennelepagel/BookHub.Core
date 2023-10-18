@@ -4,9 +4,11 @@ using Google.Cloud.Functions.Framework;
 using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
 using Google.Cloud.Firestore;
+using Google.Cloud.Functions.Hosting;
 
 namespace BookHub.Core.Appointment;
 
+[FunctionsStartup(typeof(Startup))]
 public class Function : IHttpFunction
 {
     /// <summary>
@@ -16,15 +18,6 @@ public class Function : IHttpFunction
     /// <returns>A task representing the asynchronous operation.</returns>
     public async Task HandleAsync(HttpContext context)
     {
-        var db = await FirestoreDb.CreateAsync();
-        var docRef = db.Collection("users").Document("alovelace");
-        var user = new Dictionary<string, object>
-        {
-            { "First", "Ada" },
-            { "Last", "Lovelace" },
-            { "Born", 1815 }
-        };
-        await docRef.SetAsync(user);
         await context.Response.WriteAsync("Hello, Functions Framework.");
     }
 }
