@@ -1,5 +1,8 @@
+using Google.Cloud.Firestore;
+
 namespace BookHub.Core.Persistence.Entities;
 
+[FirestoreData]
 public class Business
 {
     public string Id { get; set; }
