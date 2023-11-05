@@ -1,4 +1,4 @@
-namespace WebApplication1
+namespace BookHub.Core.Api
 {
     public class WeatherForecast
     {
